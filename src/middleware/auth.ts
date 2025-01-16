@@ -21,7 +21,7 @@ export const jwtParse = async (
   next: NextFunction
 ): Promise<void> => {
   const authorization = req.headers.authorization;
-
+  console.log("AUTHENTICATING");
   if (!authorization || !authorization.startsWith("Bearer ")) {
     res.status(401).send({ message: "Unauthorized" });
     return;
