@@ -83,6 +83,7 @@ const updateMyRestaurant = async (req: CustomRequest, res: Response) => {
     res.status(500).json({ message: "error update restaurant" });
   }
 };
+
 export default {
   createMyRestaurant,
   getMyRestaurant,
